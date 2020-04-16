@@ -1,0 +1,26 @@
+@mixin child {
+    background-color: white;
+    font-size: 50px;
+    border: 1px solid blue;
+    width: fit-content;
+    margin: 1em auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+}
+
+.container{
+    background-color: rgb(235, 235, 235);
+
+    .stories{
+        @include child;
+    }
+
+    .new-post{
+        @include child;
+    }
+
+
+    .list-post{
+        @include child;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    background-color:white;
+    min-height: 1vh;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(5px + 2vmin);
+    color: black;
+    justify-content: space-between;
+    
+
+    .left-nav{
+        color: rgb(0, 140, 255);
+        flex-grow: 1;
+        margin: 20px 10px;
+    }
+
+    .mid-nav{
+        flex-grow: 2;
+
+        .list-button{
+            list-style-type: none;
+            display: inline-flex;
+
+            li{
+                margin: 5px 5px ;
+            }
+        }
+    }
+
+    .right-nav{
+        display: flex;
+        font-size: 15px;
+        flex-grow: 1;
+        
+
+        .profile{
+            display: inline-flex;
+        }
+    }
+}
